@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.sp{
+    color: red;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container .contact{
+    width: 450px;
+ 
+    margin-top: 20px;
+   
+   position: fixed;
+    
+}
+img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    width: 400px;
+  
+    height: 100%;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding:8px 16px;
+  
+    
+    
+}
+a:hover{
+    background-color: #555;
+    color: white;
+}
+.active{
+    background-color: #04AA6D;
+    color: white;
+}
+.active:hover{
+    background-color: #04AA6D;
+    color: white;
+}
+.info{
+    margin-left: 450px;
+    border-left: 2px solid black;
+    margin-top: 50px;
+}
+h2{
+    padding-left: 20px;
+    margin-top: 50px;
+   
+}
+pre{
+    font-size: larger;
+    padding-top: 20px;
+}
+.skills{
+    padding-left: 150px;
+ 
+}
+.skills li{
+    list-style-type: none;
+    font-weight: bold;
+    line-height:30px ;
+    font-size: large;
+    
+}
+
+.skills li::before{
+    content: "";
+    background-color: orangered;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+abbr{
+    text-decoration: none;
+}
+h2::first-letter{
+    color: red;
+}
+.goals{
+    padding-left: 150px;
+}
+.goals li{
+    list-style-type: none;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: large;
+}
+.goals li::before{
+    content: "";
+    background-color: blueviolet;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+i{
+    font-size: 50px;
+    display: inline-block;
+}
+.icons{
+    margin-top: 20px;
+}
+.icons a{
+    display: inline;
+}
+.icons a:hover{
+    background:none;
+}
+footer{
+    background-color: #111;
+    margin-top: 10px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+@media screen and (max-width:900px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+   .container .contact{
+        position: relative;
+        margin:auto;
+        margin-top: 40px;
+    }
+    .info{
+        margin-left: 0;
+    }
+    pre{
+        white-space: pre-line;
+        margin-left: 20px;
+    }
+}
